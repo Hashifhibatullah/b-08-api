@@ -14,11 +14,11 @@ module.exports = {
         type: Sequelize.STRING,
       },
       product_category: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         references: {
           model: "Categories",
-          key: "name",
+          key: "id",
         },
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
